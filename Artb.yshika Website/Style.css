@@ -1,0 +1,606 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+
+/* ................Navbar section ................*/
+#nav {
+  top: 0;
+  position: sticky;
+  z-index: 10;
+}
+.navbar {
+  background-image: linear-gradient(to right, #5f1782bf, #212529);
+}
+.navbar-brand {
+  font-family: cursive;
+  color: white !important;
+}
+img {
+  height: 37px;
+  padding-left: 3px;
+}
+li {
+  padding: 0 10px;
+}
+
+a.nav-link {
+  color: white !important;
+  font-weight: 600;
+  float: right;
+  text-align: left;
+}
+.navbar-toggler {
+  outline: none !important;
+}
+.fa-bars {
+  color: white;
+  font-size: 18px;
+}
+
+/* ................Banner section 1............... */
+
+.banner {
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+  color: white;
+  padding-top: 5%;
+  width: 100%;
+  height: 100%;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 122.7%;
+  background-image: url("images/bannerImage-nobg.png");
+  opacity: 0.5;
+  background-size: cover;
+}
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+.Banner-heading {
+  font-size: 50px;
+  font-weight: 650;
+  margin-top: 110px;
+}
+.Banner-subheading {
+  font-weight: 480;
+}
+.play-button {
+  width: 49px;
+  height: 54px;
+  margin: 0px;
+}
+
+.btn {
+  margin-top: 34px;
+  padding: 0;
+}
+
+.Watch-tutorial {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.Banner-image {
+  z-index: 1;
+}
+
+/* ...................Banner section 2.................... */
+
+.section2 {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  /* background-color: red; */
+  padding-top: 42px;
+}
+.section2-content {
+  position: relative;
+  z-index: 1;
+}
+.sanamImage {
+  margin-top: -200px;
+}
+.Humble-beg-title {
+  font-weight: bold;
+  margin-left: 6px;
+}
+.Humble-beg-para {
+  text-align: justify;
+  margin-left: 12px;
+  margin-top: 37px;
+}
+
+/* ...................services section 3.................... */
+.section3 {
+  padding-top: 70px;
+  /* background-color: antiquewhite; */
+  margin-bottom: 100px;
+}
+.services-heading {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  font-weight: bold;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+.cards {
+  margin: 3px;
+}
+.card {
+  width: 12rem;
+}
+.card-img-top {
+  height: 15rem;
+}
+.card-heading {
+  font-weight: 550;
+  text-align: center;
+}
+.card-text {
+  text-align: center;
+}
+
+/* ...................gallery section 4.................... */
+
+.gallery {
+  background-image: linear-gradient(
+    90deg,
+    #5f1782 0%,
+    #743792 35%,
+    #d178fd 100%
+  );
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 390px;
+  padding-left: 210px;
+  margin-bottom: 100px;
+}
+.slider-img {
+  position: relative;
+  width: 650px;
+  height: 500px;
+  transform-style: preserve-3d;
+  animation: moving 30s linear infinite;
+}
+@keyframes moving {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.slider-img span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+}
+
+.slider-img span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 2s;
+}
+
+.heading-gallery {
+  position: absolute;
+  left: 100px;
+  font-size: 65px;
+  font-weight: 650;
+  color: #fff;
+  letter-spacing: -15px;
+  text-transform: uppercase;
+  text-orientation: upright;
+  text-align: start;
+  writing-mode: vertical-lr;
+  top: 87px;
+}
+
+/* ..............aboutus section5................... */
+.AboutUs{
+  height: 100vh;
+  padding-top: 32px;
+}
+.aboutus-content {
+  padding-top: 30px;
+}
+.Aboutus-para {
+  padding-top: 12px;
+  text-align: justify;
+
+}
+
+.contactUs-btn {
+  background-color: #411c52;
+  border: #411c52;
+  border-radius: 10px;
+  color: white;
+  font-weight: 495;
+  padding: 9px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 743792;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 11px;
+}
+
+.contactUs-btn:hover {
+  background-color: #411c524b;
+  color: #411c52;
+}
+
+/* .........contact us section 6........... */
+
+.Contact-Us {
+  background-color: 411c524b;
+  padding-top: 30px;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+.wrapper .card {
+  background: linear-gradient(
+    to right,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  width: 430px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  justify-self: space-between;
+  border-radius: 100px 20px 20px 100px;
+  height: 22vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+  .wrapper .card .img {
+  height: 90px;
+  width: 90px;
+}
+.card .content {
+  display: flex;
+  align-items: center;
+}
+.card .img img {
+  height: 89%;
+  width: 33%;
+  border-radius: 50%;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card .details .name {
+  position: absolute;
+  top: 22px;
+  left: 161px;
+  font-size: 25px;
+  color: white;
+}
+.card .details .subname {
+  position: absolute;
+  top: 59px;
+  left: 161px;
+  font-size: 17px;
+  color: white;
+}
+.details span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  background: #290939bf;
+  border: #212529;
+  padding: 6px 28px;
+  border-radius: 25px;
+  color: #fff;
+  position: absolute;
+  top: 95px;
+  left: 160px;
+}
+
+.wrapper .card2 {
+  background: red;
+  width: 430px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  justify-self: space-between;
+  border-radius: 100px 20px 20px 100px;
+  height: 22vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.wrapper .card2 .img {
+  height: 90px;
+  width: 90px;
+}
+.card2 .content {
+  display: flex;
+  align-items: center;
+}
+.card2 .img img {
+  height: 89%;
+  width: 33%;
+  border-radius: 50%;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card2 .details .name {
+    position: absolute;
+    top: 22px;
+    left: 161px;
+    font-size: 25px;
+  color: white;
+}
+.card2 .details .subname {
+    font-size: 17px;
+    color: white;
+  position: absolute;
+  top: 59px;
+  left: 161px;
+}
+.details span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card2 a {
+  text-decoration: none;
+  background: white;
+  border: white;
+  padding: 6px 28px;
+  border-radius: 25px;
+  color: red;
+  position: absolute;
+  top: 95px;
+  left: 160px;
+}
+
+.wrapper .card3 {
+  background: linear-gradient(135deg, #0077b5, #0a66c2);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  justify-self: space-between;
+  border-radius: 100px 20px 20px 100px;
+  height: 23vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 430px;
+
+}
+
+.wrapper .card3 .img {
+  height: 90px;
+  width: 90px;
+}
+.card3 .content {
+  display: flex;
+  align-items: center;
+}
+.card3 .img img {
+  height: 89%;
+  width: 33%;
+  border-radius: 50%;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card3 .details .name {
+    font-size: 25px;
+  color: white;
+  position: absolute;
+  top: 22px;
+  left: 161px;
+}
+.card3 .details .subname {
+  font-size: 17px;
+  color: white;
+  position: absolute;
+  top: 59px;
+  left: 161px;
+}
+.details span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card3 a {
+  text-decoration: none;
+  background: white;
+  border: white;
+  padding: 6px 28px;
+  border-radius: 25px;
+  color: #0a66c2;
+  position: absolute;
+  top: 95px;
+  left: 160px;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+.contactContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 8%;
+  padding-top: 38px;
+  position: relative;
+  height: 65vh;
+  margin-top: 41px;
+}
+
+.mapImg{
+  position: absolute;
+  top: 0;
+  height: 65vh;
+  width: 58%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  left: 27px;
+  
+}
+
+.contactboxtext {
+  display: block;
+  margin-bottom: 10px; 
+  text-align: center;
+  color: white;
+  margin-top: 18px;
+
+}
+
+.contactboxtext, textarea {
+  width: 100%; 
+  padding: 8px; 
+  box-sizing: border-box; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  margin-top: 28px;
+  display: block;
+  text-align: center;
+
+}
+.contactboxtextHeading{
+  color: #411c52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SubmitBtn {
+  background-color: #582f82f2;
+  color: white;
+  border-radius: 8px;
+  padding: 3px 18px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  margin-top: 18px;
+  width: 395px;
+}
+
+.SubmitBtn:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); 
+}
+.rightPanel{
+  padding: 15px;
+}
+
+.wrapper{
+  height: 36vh;
+  margin-top: 105px;
+}
+
+/* .........footer........... */
+
+.footer{
+  height: 45vh;
+    background-image: linear-gradient(to right, #212529, #5f1782f0);
+    margin-top: 25%;
+    color: white;
+    padding: 46px;
+    position: relative;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none; 
+}
+
+
+ul li a:hover {
+  text-decoration: none;
+}
+
+
+ul li a:hover {
+ color: #f2c359;
+}
+
+.footerContent{
+  width: 18%;
+    padding-top: 2%;
+    position: absolute;
+    top: 2px;
+    left: 24%;
+}
+.footerImage{
+  height: 6vh;
+}
+.footerlogo{
+  position: absolute;
+  top: 35px;
+  left: 57px;
+}
+.footerListing{
+  position: absolute;
+    top: 34px;
+    left: 53%;
+}
+.footerAddress{
+  position: absolute;
+  top: 31px;
+  left: 76%;
+}
+
